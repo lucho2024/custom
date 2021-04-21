@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?><components xmlns:scr="http://www.osgi.org/xmlns/scr/v1.1.0">
+    <scr:component enabled="true" name="com.cobiscorp.cobis.fctrc.customevents.impl.query.executequery.ProductoQuery_Q_PRODCUCU_ZJ11">
+        <implementation class="com.cobiscorp.cobis.fctrc.customevents.impl.query.executequery.ProductoQuery_Q_PRODCUCU_ZJ11"/>
+        <service servicefactory="false">
+            <provide interface="com.cobiscorp.designer.api.customization.IExecuteQuery"/>
+        </service>
+        <property name="query.id" type="String" value="Q_PRODCUCU_ZJ11" private="false"/>
+        <property name="query.version" type="String" value="1.0.0" private="false"/>
+        <property name="service.pid" value="com.cobiscorp.cobis.fctrc.customevents.impl.query.executequery.ProductoQuery_Q_PRODCUCU_ZJ11" private="false"/>
+        <reference name="bliConsultarProductos" interface="com.cobiscorp.designer.bli.api.IBLIExecutor" cardinality="1..1" policy="static" target="(bli.id=BLI3055_bli_consultaproductos)" bind="setBliConsultarProductos" unbind="unsetBliConsultarProductos" checked="true" strategy="event"/>
+    </scr:component>
+</components>
